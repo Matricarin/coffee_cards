@@ -9,8 +9,12 @@ namespace CoffeeCards.Api.Controllers
     [Route("api/[controller]")]
     public class UsersController : ControllerBase
     {
-        private static readonly List<User> _users = new();
+        private static readonly List<User> _users = new()
+        {
+            new User("example@yahooo.com", "+79034567834", "1111")
+        };
 
+        [HttpPost]
         public IActionResult Create(UserRequest request)
         {
             var user = new User(request.Email, request.PhoneNumber, request.Password); // hashed password
@@ -27,6 +31,7 @@ namespace CoffeeCards.Api.Controllers
             return CreatedAtAction(nameof(GetById), new { Id = user.Id }, response);
         }
 
+        [HttpGet]
         public IActionResult GetAll()
         {
             var response = _users.Select(u => new UserResponse
@@ -39,6 +44,7 @@ namespace CoffeeCards.Api.Controllers
             return Ok(response);
         }
 
+        [HttpGet("{id}")]
         public IActionResult GetById(Guid id)
         {
             var user = _users.FirstOrDefault(u => u.Id == id);
