@@ -2,7 +2,7 @@ using System.Text.RegularExpressions;
 
 namespace CoffeeCards.Domain.SeedWork
 {
-    public class Email
+    public class Email : ValueObject
     {
         public string Value { get; }
 
@@ -14,6 +14,16 @@ namespace CoffeeCards.Domain.SeedWork
             }
 
             Value = email;
+        }
+
+        public override string ToString()
+        {
+            return Value;
+        }
+
+        protected override IEnumerable<object?> GetEqualityComponents()
+        {
+            yield return Value;
         }
     }
 }

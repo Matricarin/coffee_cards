@@ -2,7 +2,7 @@ using System.Text.RegularExpressions;
 
 namespace CoffeeCards.Domain.SeedWork
 {
-    public class PhoneNumber
+    public class PhoneNumber : ValueObject
     {
         public string Value { get; }
 
@@ -12,7 +12,18 @@ namespace CoffeeCards.Domain.SeedWork
             {
                 throw new ArgumentException("Invalid number");
             }
+
             Value = number;
+        }
+
+        public override string ToString()
+        {
+            return Value;
+        }
+
+        protected override IEnumerable<object?> GetEqualityComponents()
+        {
+            yield return Value;
         }
     }
 }
