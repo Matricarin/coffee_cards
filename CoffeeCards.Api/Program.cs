@@ -1,10 +1,13 @@
-using Microsoft.AspNetCore.Diagnostics.HealthChecks;var builder = WebApplication.CreateBuilder(args);
+using CoffeeCards.Api.HealthChecks;
+
+var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddHealthChecks();
+builder.Services.AddHealthChecks()
+    .AddCheck<FirstHealthCheck>("First health check");
 
 var app = builder.Build();
 
