@@ -1,3 +1,5 @@
+using CoffeeCards.Domain.SeedWork;
+
 namespace CoffeeCards.Domain.Models
 {
     public class User
