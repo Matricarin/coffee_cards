@@ -1,5 +1,3 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace CoffeeCards.Domain
 {
     public class User
