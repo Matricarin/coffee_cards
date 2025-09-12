@@ -1,4 +1,4 @@
-namespace CoffeeCards.Domain
+﻿namespace CoffeeCards.Domain.SeedWork
 {
     public class Address 
     { 

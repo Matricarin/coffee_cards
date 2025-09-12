@@ -1,6 +1,6 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace CoffeeCards.Domain
+namespace CoffeeCards.Domain.Models
 {
     public class CoffeeShop
     {

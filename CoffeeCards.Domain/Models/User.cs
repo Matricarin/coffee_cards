@@ -1,4 +1,4 @@
-namespace CoffeeCards.Domain
+namespace CoffeeCards.Domain.Models
 {
     public class User
     {
