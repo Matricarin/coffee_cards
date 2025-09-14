@@ -6,7 +6,7 @@ namespace CoffeeCards.Domain.Models
     {
         public Email Email { get; private set; }
         public Guid Id { get; private set; }
-        public string PasswordHash { get; private set; }
+        public string Password { get; private set; }
         public PhoneNumber PhoneNumber { get; private set; }
 
         public User(string email, string phone, string password)
@@ -14,7 +14,7 @@ namespace CoffeeCards.Domain.Models
             Id = Guid.NewGuid();
             Email = new Email(email);
             PhoneNumber = new PhoneNumber(phone);
-            PasswordHash = password;
+            Password = password;
         }
     }
 }
