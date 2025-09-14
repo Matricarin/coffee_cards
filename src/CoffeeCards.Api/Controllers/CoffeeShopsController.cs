@@ -6,21 +6,15 @@ namespace CoffeeCards.Api.Controllers
     [Route("api/[controller]")]
     public class CoffeeShopsController : ControllerBase
     {
-        
-
         [HttpGet]
         public IActionResult GetAllCoffeeShops()
         {
-            // TODO: implement getting all list of coffee shops
-
             return BadRequest();
         }
 
-        [HttpGet("{name}")]
-        public IActionResult GetCoffeeShopByName(string name)
+        [HttpGet("{id}")]
+        public IActionResult GetCoffeeShop(Guid id)
         {
-            //  TODO: implement getting coffeeshop by name
-
             return BadRequest();
         }
     }

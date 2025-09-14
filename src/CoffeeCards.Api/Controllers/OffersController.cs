@@ -8,16 +8,16 @@ namespace CoffeeCards.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ShopBranchesController : ControllerBase
+    public class OffersController : ControllerBase
     {
-        [HttpPost("{shopId}/{branchInfo}")]
-        public IActionResult CreateCoffeeShopBranch(string shopId, string branchInfo)
+        [HttpGet("{shopId}")]
+        public IActionResult GetShopOffers(Guid shopId)
         {
             return BadRequest();
         }
 
-        [HttpGet("{shopId}")]
-        public IActionResult GetAllShopBranches(Guid shopId)
+        [HttpPost("{shopId}")]
+        public IActionResult CreateOffer(Guid shopId)
         {
             return BadRequest();
         }
