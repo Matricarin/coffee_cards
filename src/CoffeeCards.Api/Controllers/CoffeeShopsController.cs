@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoffeeCards.Api.Controllers
@@ -13,12 +9,16 @@ namespace CoffeeCards.Api.Controllers
         [HttpGet]
         public IActionResult GetAllCoffeeShops()
         {
+            // TODO: implement getting all list of coffee shops
+
             return Ok();
         }
 
         [HttpGet("{name}")]
         public IActionResult GetCoffeeShopByName(string name)
         {
+            //  TODO: implement getting coffeeshop by name
+
             return Ok();
         }
     }
