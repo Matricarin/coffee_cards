@@ -6,7 +6,8 @@ namespace CoffeeCards.Api.Controllers
     [Route("api/[controller]")]
     public class UsersController : ControllerBase
     {
-        public IActionResult CreateUser()
+        [HttpPost]
+        public IActionResult CreateUser(string userInfo)
         {
             //  TODO: implement user creation
 
