@@ -6,6 +6,8 @@ namespace CoffeeCards.Api.Controllers
     [Route("api/[controller]")]
     public class CoffeeShopsController : ControllerBase
     {
+        
+
         [HttpGet]
         public IActionResult GetAllCoffeeShops()
         {
