@@ -9,17 +9,12 @@ namespace CoffeeCards.Api.Controllers
     [Route("api/[controller]")]
     public class UsersController : ControllerBase
     {
-        private static readonly List<User> _users = new()
-        {
-            new User("example@yahooo.com", "+79034567834", "1111")
-        };
-
         [HttpPost]
         public IActionResult CreateUser(UserRequest request)
         {
-            var user = new User(request.Email, request.PhoneNumber, request.Password); // hashed password
+            //  TODO: implement user creation
 
-            _users.Add(user);
+            var user = new User(request.Email, request.PhoneNumber, request.Password);
 
             var response = new UserResponse()
             {
@@ -34,34 +29,17 @@ namespace CoffeeCards.Api.Controllers
         [HttpGet]
         public IActionResult GetAllUsers()
         {
-            var response = _users.Select(u => new UserResponse
-            {
-                Email = u.Email.Value,
-                Id = u.Id,
-                PhoneNumber = u.PhoneNumber.Value
-            });
+            //  TODO: implement getting all users
 
-            return Ok(response);
+            return Ok();
         }
 
         [HttpGet("{id}")]
         public IActionResult GetUserById(Guid id)
         {
-            var user = _users.FirstOrDefault(u => u.Id == id);
+            //  TODO: implement getting user by id
 
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-            var response = new UserResponse
-            {
-                Email = user.Email.Value,
-                Id = user.Id,
-                PhoneNumber = user.PhoneNumber.Value
-            };
-
-            return Ok(response);
+            return Ok();
         }
     }
 }
