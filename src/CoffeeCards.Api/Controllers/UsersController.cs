@@ -31,7 +31,7 @@ namespace CoffeeCards.Api.Controllers
         {
             //  TODO: implement getting all users
 
-            return Ok();
+            return BadRequest();
         }
 
         [HttpGet("{id}")]
@@ -39,7 +39,7 @@ namespace CoffeeCards.Api.Controllers
         {
             //  TODO: implement getting user by id
 
-            return Ok();
+            return BadRequest();
         }
     }
 }

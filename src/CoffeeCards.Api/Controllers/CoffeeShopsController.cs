@@ -11,7 +11,7 @@ namespace CoffeeCards.Api.Controllers
         {
             // TODO: implement getting all list of coffee shops
 
-            return Ok();
+            return BadRequest();
         }
 
         [HttpGet("{name}")]
@@ -19,7 +19,7 @@ namespace CoffeeCards.Api.Controllers
         {
             //  TODO: implement getting coffeeshop by name
 
-            return Ok();
+            return BadRequest();
         }
     }
 }
