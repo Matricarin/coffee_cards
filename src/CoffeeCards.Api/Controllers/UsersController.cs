@@ -15,7 +15,7 @@ namespace CoffeeCards.Api.Controllers
         };
 
         [HttpPost]
-        public IActionResult Create(UserRequest request)
+        public IActionResult CreateUser(UserRequest request)
         {
             var user = new User(request.Email, request.PhoneNumber, request.Password); // hashed password
 
@@ -28,11 +28,11 @@ namespace CoffeeCards.Api.Controllers
                 PhoneNumber = user.PhoneNumber.Value
             };
 
-            return CreatedAtAction(nameof(GetById), new { Id = user.Id }, response);
+            return CreatedAtAction(nameof(GetUserById), new { Id = user.Id }, response);
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult GetAllUsers()
         {
             var response = _users.Select(u => new UserResponse
             {
@@ -45,7 +45,7 @@ namespace CoffeeCards.Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetById(Guid id)
+        public IActionResult GetUserById(Guid id)
         {
             var user = _users.FirstOrDefault(u => u.Id == id);
 
