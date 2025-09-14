@@ -12,8 +12,8 @@ namespace CoffeeCards.Api.Controllers
             return BadRequest();
         }
 
-        [HttpGet("{id}")]
-        public IActionResult GetCoffeeShop(Guid id)
+        [HttpGet("{shopId}")]
+        public IActionResult GetCoffeeShop(Guid shopId)
         {
             return BadRequest();
         }
