@@ -11,7 +11,7 @@ namespace CoffeeCards.Api.Controllers
     public class ShopBranchesController : ControllerBase
     {
         [HttpPost("{shopId}/{branchInfo}")]
-        public IActionResult CreateCoffeeShopBranch(string shopId, string branchInfo)
+        public IActionResult CreateCoffeeShopBranch(Guid shopId, string branchInfo)
         {
             return BadRequest();
         }
