@@ -1,27 +1,11 @@
+using CoffeeCards.Api;
 using CoffeeCards.Api.HealthChecks;
 
-var builder = WebApplication.CreateBuilder(args);
+CreateHostBuilder(args).Build().Run();
 
-builder.Services.AddControllers();
-
-builder.Services.AddEndpointsApiExplorer();
-
-builder.Services.AddSwaggerGen();
-
-builder.Services.AddHealthChecks()
-    .AddCheck<FirstHealthCheck>("First health check");
-
-var app = builder.Build();
-
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-    app.MapHealthChecks("/health");
-}
-
-app.UseHttpsRedirection();
-
-app.MapControllers();
-
-app.Run();
+static IHostBuilder CreateHostBuilder(string[] args) =>
+        Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
