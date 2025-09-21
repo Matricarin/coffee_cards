@@ -31,11 +31,6 @@ namespace CoffeeCards.Api
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
-
-                app.UseEndpoints(endpoints =>
-                {
-                    endpoints.MapHealthChecks("/health");
-                });
             }
 
             app.UseHttpsRedirection();
@@ -45,6 +40,7 @@ namespace CoffeeCards.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHealthChecks("/health");
             });
         }
     }
