@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeCards.Domain", "src\C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeCards.Infrastructure", "src\CoffeeCards.Infrastructure\CoffeeCards.Infrastructure.csproj", "{AB6B4AFC-EA1E-2492-F8A1-68EF3FAA8D44}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{95D80DF9-8851-44A7-AF02-40CD90AC0356}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeCards.Test", "tests\CoffeeCards.Test\CoffeeCards.Test.csproj", "{4EEF6A9C-26AD-4902-9838-972CFE860D27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,10 @@ Global
 		{AB6B4AFC-EA1E-2492-F8A1-68EF3FAA8D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB6B4AFC-EA1E-2492-F8A1-68EF3FAA8D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB6B4AFC-EA1E-2492-F8A1-68EF3FAA8D44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EEF6A9C-26AD-4902-9838-972CFE860D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EEF6A9C-26AD-4902-9838-972CFE860D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EEF6A9C-26AD-4902-9838-972CFE860D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EEF6A9C-26AD-4902-9838-972CFE860D27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +52,7 @@ Global
 		{7D40DBE1-2122-A5F6-CB43-99AB69508081} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{FBE302A5-4C0B-6900-7908-2E2E69B98F7E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{AB6B4AFC-EA1E-2492-F8A1-68EF3FAA8D44} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{4EEF6A9C-26AD-4902-9838-972CFE860D27} = {95D80DF9-8851-44A7-AF02-40CD90AC0356}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C0E2A00-FC3D-4555-ADE5-BAA0EFC34883}

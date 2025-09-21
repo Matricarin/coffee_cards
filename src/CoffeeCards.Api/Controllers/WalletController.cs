@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using CoffeeCards.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoffeeCards.Api.Controllers
@@ -10,6 +7,7 @@ namespace CoffeeCards.Api.Controllers
     [Route("api/[controller]")]
     public class WalletController : ControllerBase
     {
+
         [HttpGet("{userId}")]
         public IActionResult GetUserWallet(Guid userId)
         {
