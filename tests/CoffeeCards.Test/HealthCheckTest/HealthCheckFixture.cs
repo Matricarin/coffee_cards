@@ -1,8 +1,6 @@
+using System.Net;
 using CoffeeCards.Api;
-using Microsoft.AspNetCore.Authorization.Infrastructure;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Xunit;
 
 namespace CoffeeCards.Test.HealthCheckTest
 {
@@ -18,11 +16,13 @@ namespace CoffeeCards.Test.HealthCheckTest
         }
 
         [Fact]
-        public async Task IsHealthy()
+        public async Task IsStatusCodeOk()
         {
             using var request = new HttpRequestMessage(HttpMethod.Get, "/health");
 
-            using var response = await _client.SendAsync(request);   
+            using var response = await _client.SendAsync(request);
+
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         }
     }
 }
