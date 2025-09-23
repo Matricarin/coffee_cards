@@ -7,8 +7,8 @@ namespace CoffeeCards.Core.Entities
 {
     public class CoffeeShop
     {
-        public Guid Id { get; set; }
+        public Guid CoffeeShopId { get; set; }
         public Guid BrandId{ get; set; }
-        public Address Address { get; set; }
+        public required Address Address { get; set; }
     }
 }
