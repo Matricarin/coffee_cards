@@ -1,8 +1,9 @@
+using Microsoft.AspNetCore.Identity;
+
 namespace CoffeeCards.Core.Entities
 {
-    public class User
+    public class ApplicationUser : IdentityUser
     {
-        public Guid UserId { get; set; }
-        public PhoneNumber Phone { get; set; }        
+        public required PhoneNumber Phone { get; set; }        
     }
 }
