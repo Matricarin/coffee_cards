@@ -18,7 +18,7 @@ namespace CoffeeCards.Core.Entities
 
         protected abstract IEnumerable<object> GetEqualityComponents();
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (obj == null || obj.GetType() != GetType())
             {
@@ -37,7 +37,7 @@ namespace CoffeeCards.Core.Entities
                 .Aggregate((x, y) => x ^ y);
         }
 
-        public ValueObject GetCopy()
+        public ValueObject? GetCopy()
         {
             return this.MemberwiseClone() as ValueObject;
         }

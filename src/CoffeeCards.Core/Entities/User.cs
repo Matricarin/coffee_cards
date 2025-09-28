@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Identity;
-
 namespace CoffeeCards.Core.Entities
 {
     public class User 
