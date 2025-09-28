@@ -1,6 +1,6 @@
-using CoffeeCards.Core.Entities;
+using CoffeeCards.Offers.Models;
 
-namespace CoffeeCards.Core.Interfaces
+namespace CoffeeCards.Offers.Interfaces
 {
     public interface IOfferRepository
     {
