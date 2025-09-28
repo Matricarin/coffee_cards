@@ -9,6 +9,5 @@ namespace CoffeeCards.Core.Entities
         public required string PictureUrl { get; set; }
 
         public required CoffeeShop CoffeeShop { get; set; }
-        public required Offer Offer{ get; set; }
     }
 }

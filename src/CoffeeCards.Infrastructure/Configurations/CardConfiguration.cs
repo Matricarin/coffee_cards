@@ -23,6 +23,11 @@ namespace CoffeeCards.Infrastructure.Configurations
                 .HasColumnName("coffee_shop_id")
                 .IsRequired();
 
+            builder.HasOne(c => c.CoffeeShop)
+                .WithMany(s => s.Cards)
+                .HasForeignKey(c => c.CoffeeShopId)
+                .HasConstraintName("fk_cards_coffeeshop");
+
             builder.Property(c => c.OfferId)
                 .HasColumnName("offer_id")
                 .HasColumnType("varchar(50)")
