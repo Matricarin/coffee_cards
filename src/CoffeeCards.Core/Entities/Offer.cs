@@ -1,6 +1,6 @@
 namespace CoffeeCards.Core.Entities
 {
-    public class Offer
+    public abstract class Offer
     {
         public required string Id { get; set; }
         public Guid CoffeeShopId { get; set; }
