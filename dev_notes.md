@@ -262,3 +262,7 @@ public static class MiddlewareExtensions
 ```
 
 ## ...
+
+## Вопросы
+
+- Как хранить разные предложения в базе данных?

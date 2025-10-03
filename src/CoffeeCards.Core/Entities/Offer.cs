@@ -1,12 +1,12 @@
+using CoffeeCards.Core.Entities.OffersParameters;
+
 namespace CoffeeCards.Core.Entities
 {
     public class Offer
     {
-        public required string Id { get; set; }
         public Guid CoffeeShopId { get; set; }
-        public required string Title { get; set; }
-        public required string Type { get; set; }
-        public DateTime? ValidFrom { get; set; }
-        public DateTime? ValidUntil { get; set; }
+        public Guid OfferId { get; set; }
+        public Guid ParametersId { get; set; }
+        public required IOfferParameters Parameters { get; set; }
     }
 }
