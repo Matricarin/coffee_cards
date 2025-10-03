@@ -15,8 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{19CB99F7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeCards.Test", "tests\CoffeeCards.Test\CoffeeCards.Test.csproj", "{FE1715EC-EDB6-477F-927B-436687B89A73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeCards.Offers", "src\CoffeeCards.Offers\CoffeeCards.Offers.csproj", "{E3B0DAB8-03BD-4BE2-B057-E8A006649D71}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,22 +37,17 @@ Global
 		{FE1715EC-EDB6-477F-927B-436687B89A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE1715EC-EDB6-477F-927B-436687B89A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE1715EC-EDB6-477F-927B-436687B89A73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E3B0DAB8-03BD-4BE2-B057-E8A006649D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E3B0DAB8-03BD-4BE2-B057-E8A006649D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E3B0DAB8-03BD-4BE2-B057-E8A006649D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E3B0DAB8-03BD-4BE2-B057-E8A006649D71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2C0E2A00-FC3D-4555-ADE5-BAA0EFC34883}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6B220DBD-4B40-4479-AADB-8CFB3BA279F3} = {0147E387-F4E7-489C-A35F-3D042A8C5F22}
 		{FE4D2B11-FE38-4B98-9E18-52DFD2D4F67C} = {0147E387-F4E7-489C-A35F-3D042A8C5F22}
 		{FBBC1B32-55A5-4EEF-9083-796F2BFB1822} = {0147E387-F4E7-489C-A35F-3D042A8C5F22}
 		{FE1715EC-EDB6-477F-927B-436687B89A73} = {19CB99F7-EF36-4F69-BEE5-044F9B092996}
-		{E3B0DAB8-03BD-4BE2-B057-E8A006649D71} = {0147E387-F4E7-489C-A35F-3D042A8C5F22}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C0E2A00-FC3D-4555-ADE5-BAA0EFC34883}
 	EndGlobalSection
 EndGlobal
