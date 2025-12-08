@@ -3,49 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0147E387-F4E7-489C-A35F-3D042A8C5F22}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeCards.Api", "src\CoffeeCards.Api\CoffeeCards.Api.csproj", "{6B220DBD-4B40-4479-AADB-8CFB3BA279F3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeCards.Core", "src\CoffeeCards.Core\CoffeeCards.Core.csproj", "{FE4D2B11-FE38-4B98-9E18-52DFD2D4F67C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeCards.Infrastructure", "src\CoffeeCards.Infrastructure\CoffeeCards.Infrastructure.csproj", "{FBBC1B32-55A5-4EEF-9083-796F2BFB1822}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{19CB99F7-EF36-4F69-BEE5-044F9B092996}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeCards.Test", "tests\CoffeeCards.Test\CoffeeCards.Test.csproj", "{FE1715EC-EDB6-477F-927B-436687B89A73}"
-EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6B220DBD-4B40-4479-AADB-8CFB3BA279F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B220DBD-4B40-4479-AADB-8CFB3BA279F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B220DBD-4B40-4479-AADB-8CFB3BA279F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B220DBD-4B40-4479-AADB-8CFB3BA279F3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE4D2B11-FE38-4B98-9E18-52DFD2D4F67C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE4D2B11-FE38-4B98-9E18-52DFD2D4F67C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE4D2B11-FE38-4B98-9E18-52DFD2D4F67C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE4D2B11-FE38-4B98-9E18-52DFD2D4F67C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FBBC1B32-55A5-4EEF-9083-796F2BFB1822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FBBC1B32-55A5-4EEF-9083-796F2BFB1822}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FBBC1B32-55A5-4EEF-9083-796F2BFB1822}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FBBC1B32-55A5-4EEF-9083-796F2BFB1822}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE1715EC-EDB6-477F-927B-436687B89A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE1715EC-EDB6-477F-927B-436687B89A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE1715EC-EDB6-477F-927B-436687B89A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE1715EC-EDB6-477F-927B-436687B89A73}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{6B220DBD-4B40-4479-AADB-8CFB3BA279F3} = {0147E387-F4E7-489C-A35F-3D042A8C5F22}
-		{FE4D2B11-FE38-4B98-9E18-52DFD2D4F67C} = {0147E387-F4E7-489C-A35F-3D042A8C5F22}
-		{FBBC1B32-55A5-4EEF-9083-796F2BFB1822} = {0147E387-F4E7-489C-A35F-3D042A8C5F22}
-		{FE1715EC-EDB6-477F-927B-436687B89A73} = {19CB99F7-EF36-4F69-BEE5-044F9B092996}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C0E2A00-FC3D-4555-ADE5-BAA0EFC34883}
