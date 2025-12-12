@@ -1,7 +1,10 @@
+using System;
+using Microsoft.AspNetCore.Identity;
+
 namespace CoffeeCards.Core.Entities
 {
-    public class ApplicationUser
+    public sealed class ApplicationUser : IdentityUser<Guid>
     {
-
+        
     }
 }
