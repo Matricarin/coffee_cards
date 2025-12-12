@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Identity;
 
 namespace CoffeeCards.Core.Entities
@@ -8,11 +9,13 @@ namespace CoffeeCards.Core.Entities
         /// <summary>
         /// Name for display in client app 
         /// </summary>
-        public string? DisplayName {get; set;}
-        
+        public string? DisplayName { get; set; }
+
         /// <summary>
         /// Name if user is admin in coffee shop
         /// </summary>
-        public string? ShopName {get; set;}
+        public string? ShopName { get; set; }
+
+        public ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
     }
 }
