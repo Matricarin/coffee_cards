@@ -1,3 +1,3 @@
-﻿namespace CoffeeCards.Core.Entities.StateAggregate;
+﻿namespace CoffeeCards.Domain.Entities.StateAggregate;
 
 public abstract class ProgramState{}

@@ -1,7 +1,7 @@
 using System;
-using CoffeeCards.Core.Entities.CoffeeShopAggregate;
+using CoffeeCards.Domain.Entities.CoffeeShopAggregate;
 
-namespace CoffeeCards.Core.Entities;
+namespace CoffeeCards.Domain.Entities;
 
 public sealed class Purchase
 {

@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using CoffeeCards.Core.Entities.BonusProgramAggregate;
-using CoffeeCards.Core.Entities.CoffeeShopAggregate;
+using CoffeeCards.Domain.Entities.BonusProgramAggregate;
+using CoffeeCards.Domain.Entities.CoffeeShopAggregate;
 using Microsoft.AspNetCore.Identity;
 
-namespace CoffeeCards.Core.Entities;
+namespace CoffeeCards.Domain.Entities;
 
 public sealed class ApplicationUser : IdentityUser<Guid>
 {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace CoffeeCards.Core.Entities;
+namespace CoffeeCards.Domain.Entities;
 
 public class Address : ValueObject
 {

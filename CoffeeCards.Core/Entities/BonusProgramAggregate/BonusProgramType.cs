@@ -1,4 +1,4 @@
-﻿namespace CoffeeCards.Core.Entities.BonusProgramAggregate;
+﻿namespace CoffeeCards.Domain.Entities.BonusProgramAggregate;
 
 public enum BonusProgramType
 {

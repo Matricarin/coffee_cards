@@ -1,4 +1,4 @@
-﻿namespace CoffeeCards.Core.Entities.RulesAggregate;
+﻿namespace CoffeeCards.Domain.Entities.RulesAggregate;
 
 public abstract class ProgramRules
 {

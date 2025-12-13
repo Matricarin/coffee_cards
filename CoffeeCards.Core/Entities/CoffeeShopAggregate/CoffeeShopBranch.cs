@@ -1,6 +1,6 @@
 using System;
 
-namespace CoffeeCards.Core.Entities.CoffeeShopAggregate;
+namespace CoffeeCards.Domain.Entities.CoffeeShopAggregate;
 
 public sealed class CoffeeShopBranch
 {

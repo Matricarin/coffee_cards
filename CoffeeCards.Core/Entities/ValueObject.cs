@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CoffeeCards.Core.Entities;
+namespace CoffeeCards.Domain.Entities;
 
 public abstract class ValueObject
 {

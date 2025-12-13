@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using CoffeeCards.Core.Entities.BonusProgramAggregate;
+using CoffeeCards.Domain.Entities.BonusProgramAggregate;
 
-namespace CoffeeCards.Core.Entities.CoffeeShopAggregate;
+namespace CoffeeCards.Domain.Entities.CoffeeShopAggregate;
 
 public sealed class CoffeeShop
 {

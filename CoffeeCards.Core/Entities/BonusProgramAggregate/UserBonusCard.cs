@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CoffeeCards.Core.Entities.BonusProgramAggregate;
+namespace CoffeeCards.Domain.Entities.BonusProgramAggregate;
 
 public sealed class UserBonusCard
 {

@@ -1,7 +1,7 @@
 using System;
-using CoffeeCards.Core.Entities.CoffeeShopAggregate;
+using CoffeeCards.Domain.Entities.CoffeeShopAggregate;
 
-namespace CoffeeCards.Core.Entities.BonusProgramAggregate;
+namespace CoffeeCards.Domain.Entities.BonusProgramAggregate;
 
 public sealed class BonusProgram
 {

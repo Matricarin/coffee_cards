@@ -1,6 +1,6 @@
 using System;
 
-namespace CoffeeCards.Core.Entities;
+namespace CoffeeCards.Domain.Entities;
 
 public sealed class RefreshToken
 {
