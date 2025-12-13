@@ -16,6 +16,6 @@ namespace CoffeeCards.Core.Entities
         /// </summary>
         public string? ShopName { get; set; }
 
-        public ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
+        public ICollection<RefreshToken> RefreshTokens { get; set; } = [];
     }
 }
