@@ -1,13 +1,12 @@
 using System;
 
-namespace CoffeeCards.Core.Entities
+namespace CoffeeCards.Core.Entities.CoffeeShopAggregate;
+
+public sealed class CoffeeShopBranch
 {
-    public sealed class CoffeeShopBranch
-    {
-        public Guid Id { get; set; }
-        public string Name { get; set; } = string.Empty;
-        public Address Address { get; set; } = null!;
-        public Guid CoffeeShopId { get; set; }
-        public CoffeeShop CoffeeShop { get; set; } = null!;
-    }
+    public Address Address { get; set; } = null!;
+    public CoffeeShop CoffeeShop { get; set; } = null!;
+    public Guid CoffeeShopId { get; set; }
+    public Guid Id { get; set; }
+    public string Name { get; set; } = string.Empty;
 }
