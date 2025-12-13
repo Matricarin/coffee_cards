@@ -5,13 +5,17 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeCards.Core", "CoffeeCards.Core\CoffeeCards.Core.csproj", "{C424D36D-9F8E-4E67-BF79-41A21707AC6C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeCards.API", "CoffeeCards.API\CoffeeCards.API.csproj", "{136BFC04-E555-4D74-97FE-2781A578CEDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		..\my_dashboard\my_dashboard\career\dev_diary\dev_practice\coffee_cards\coffee_cards_api_draft.yaml = ..\my_dashboard\my_dashboard\career\dev_diary\dev_practice\coffee_cards\coffee_cards_api_draft.yaml
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
 Global
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2C0E2A00-FC3D-4555-ADE5-BAA0EFC34883}
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
@@ -33,5 +37,23 @@ Global
 		{C424D36D-9F8E-4E67-BF79-41A21707AC6C}.Release|x64.Build.0 = Release|Any CPU
 		{C424D36D-9F8E-4E67-BF79-41A21707AC6C}.Release|x86.ActiveCfg = Release|Any CPU
 		{C424D36D-9F8E-4E67-BF79-41A21707AC6C}.Release|x86.Build.0 = Release|Any CPU
+		{136BFC04-E555-4D74-97FE-2781A578CEDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136BFC04-E555-4D74-97FE-2781A578CEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136BFC04-E555-4D74-97FE-2781A578CEDE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{136BFC04-E555-4D74-97FE-2781A578CEDE}.Debug|x64.Build.0 = Debug|Any CPU
+		{136BFC04-E555-4D74-97FE-2781A578CEDE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{136BFC04-E555-4D74-97FE-2781A578CEDE}.Debug|x86.Build.0 = Debug|Any CPU
+		{136BFC04-E555-4D74-97FE-2781A578CEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136BFC04-E555-4D74-97FE-2781A578CEDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{136BFC04-E555-4D74-97FE-2781A578CEDE}.Release|x64.ActiveCfg = Release|Any CPU
+		{136BFC04-E555-4D74-97FE-2781A578CEDE}.Release|x64.Build.0 = Release|Any CPU
+		{136BFC04-E555-4D74-97FE-2781A578CEDE}.Release|x86.ActiveCfg = Release|Any CPU
+		{136BFC04-E555-4D74-97FE-2781A578CEDE}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C0E2A00-FC3D-4555-ADE5-BAA0EFC34883}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,6 @@
+@CoffeeCards.API_HostAddress = http://localhost:5226
+
+GET {{CoffeeCards.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
